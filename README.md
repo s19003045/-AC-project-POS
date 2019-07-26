@@ -20,4 +20,4 @@
 
 ## 畫面
 
-[POS screen](https://github.com/s19003045/-AC-project-POS/blob/master/image/AlphaPos.png)
+![POS screen](https://github.com/s19003045/-AC-project-POS/blob/master/image/AlphaPos.png)
