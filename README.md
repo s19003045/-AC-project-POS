@@ -15,8 +15,9 @@
 ## 工具及資源
 
 [JavaScript 物件介紹](https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/Objects)
+
 [JavaScript 物件進階實作:bouncing balls](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_building_practice)
 
 ## 畫面
 
-[POS screen]()
+[POS screen](https://github.com/s19003045/-AC-project-POS/blob/master/AlphaPos.png)
