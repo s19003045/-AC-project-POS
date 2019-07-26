@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center mt-3 mb-3 text-light">Alpha Pos System</h2>
+      <!-- left side order list -->
+      <div class="row">
+        <div class="col-md-4 p-4" data-order-lists>
+          <div class="card mb-3">
+            <div class="card-body pt-3 pr-3">
+              <div class="text-right">
+                <span data-alpha-pos="delete-drink">×</span>
+              </div>
+              <h6 class="card-title mb-1">Black Tea</h6>
+              <div class="card-text">Less Ice</div>
+              <div class="card-text">Half Sugar</div>
+            </div>
+            <div class="card-footer text-right py-2">
+              <div class="card-text text-muted">
+                $ <span data-drink-price>30</span>
+              </div>
+            </div>
+          </div>
+          <div class="text-right">
+            <button
+              class="btn btn-light text-right checkout"
+              data-alpha-pos="checkout"
+            >
+              Checkout
+            </button>
+          </div>
+        </div>
+        <!-- right side order menu -->
+        <div class="col-md-8 p-4" data-order-panel>
+          <section class="menu mb-3 mt-0">
+            <div class="card-deck mb-3">
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Black Tea</h5>
+                  <input type="radio" name="drink" value="Black Tea" />
+                </label>
+              </div>
+
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Oolong Tea</h5>
+                  <input type="radio" name="drink" value="Oolong Tea" />
+                </label>
+              </div>
+
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Baozong Tea</h5>
+                  <input type="radio" name="drink" value="Baozong Tea" />
+                </label>
+              </div>
+
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Green Tea</h5>
+                  <input type="radio" name="drink" value="Green Tea" />
+                </label>
+              </div>
+            </div>
+
+            <div class="card-deck">
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Bubble Milk Tea</h5>
+                  <input type="radio" name="drink" value="Bubble Milk Tea" />
+                </label>
+              </div>
+
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Black Tea Latte</h5>
+                  <input type="radio" name="drink" value="Black Tea Latte" />
+                </label>
+              </div>
+
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Lemon Green</h5>
+                  <input type="radio" name="drink" value="Lemon Green Tea" />
+                </label>
+              </div>
+
+              <div class="card text-center">
+                <label class="card-body px-2">
+                  <h5 class="card-title">Matcha Latte</h5>
+                  <input type="radio" name="drink" value="Matcha Latte" />
+                </label>
+              </div>
+            </div>
+          </section>
+          <section class="ice mb-3">
+            <label class="d-block text-light">Ice</label>
+            <!-- bootstrap 4 button group -->
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="ice" value="No Ice" />No
+              </label>
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="ice" value="Less Ice" />Less
+              </label>
+              <label class="btn btn-outline-primary active">
+                <input
+                  type="radio"
+                  name="ice"
+                  value="Regular Ice"
+                  checked
+                />Regular
+              </label>
+            </div>
+            <!-- /bootstrap 4 button group -->
+          </section>
+          <section class="sugar mb-3">
+            <label class="d-block text-light">Sugar</label>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-info">
+                <input type="radio" name="sugar" value="No Sugar" />No
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" name="sugar" value="A Little Sugar" />A
+                Little
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" name="sugar" value="Half Sugar" />Half
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" name="sugar" value="Less Sugar" />Less
+              </label>
+              <label class="btn btn-outline-info active">
+                <input
+                  type="radio"
+                  name="sugar"
+                  value="Regular Sugar"
+                  checked="checked"
+                />Regular
+              </label>
+            </div>
+          </section>
+          <!-- <section class="quantity mb-4">
+            <label class="d-block text-light">Sugar</label>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-outline-info active">
+                <input type="radio" name="quantity" value="1" checked />1
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" name="quantity" value="2" />2
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" name="quantity" value="3" />3
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" name="quantity" value="4" />4
+              </label>
+              <label class="btn btn-outline-info">
+                <input type="radio" name="quantity" value="5" />5
+              </label>
+            </div>
+          </section> -->
+          <div class="text-right">
+            <div
+              class="btn btn-light"
+              style="min-width:120px;"
+              data-alpha-pos="add-drink"
+            >
+              Add
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
